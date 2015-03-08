@@ -1,0 +1,122 @@
+﻿.bookCover 
+{
+    height: 800px;
+    width: 600px;
+    background-color: #1d4e92;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-highlight
+{
+    color:yellowgreen;
+}
+
+.text-large
+{
+    font-size: 8em;
+    font-weight: 900;
+}
+
+.text-mid
+{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.text-normal
+{
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.text-small
+{
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.text-tiny
+{
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+.color-normal
+{
+    color:#ffffff;
+}
+
+.list-key-point li
+{
+    border-bottom:solid 1px;
+    padding: 5px;
+    width: 80%;
+    list-style-type: none;
+}
+
+.container-author
+{
+    color: #abff00;
+    width: 80%;
+    padding: 10px 0 0 30px;
+}
+
+.high-light-info
+{
+    background-color:yellowgreen; 
+    padding: 10px;
+}
+
+.container-left-panel
+{
+    position: absolute;
+    float: left;
+    background-color: #cbcbcb;
+}
+
+.container-top
+{
+    height:50%;
+}
+
+/*This is not recommended, Just for demo purpose*/
+.container-top >div :not(.high-light-info)
+{
+    padding-right: 30px; !important;
+} 
+
+.container-bottom
+{
+    height:50%;
+}
+
+.container-special-offer 
+{
+    background-color: #ff0000;
+    width: 70%;
+    margin-top: 180px;
+    padding-left: 30px;
+    -webkit-transform: skew(0deg, -6deg);
+    -moz-transform: skew(0deg, -6deg);
+    -o-transform: skew(0deg, -6deg);
+    -ms-transform: skew(0deg, -6deg);
+    transform: skew(0deg, -6deg);
+}
+
+.container-sub-info 
+{
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.hide
+{
+    display: none;
+}
+
+
+

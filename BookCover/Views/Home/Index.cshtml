@@ -1,0 +1,59 @@
+﻿<div class="container" ng-app="BookApp" ng-controller="BookCtrl" ng-init="book()">
+    <div class="container-left-panel">
+        <div>
+            <input type="number" class="form-control" ng-model="bookId" placeholder="Enter Book ID">
+        </div>
+        <button type="submit" class="btn btn-primary pull-right" ng-click="book()">Submit</button>
+    </div>
+    <div class="bookCover">
+        <div class="row clearfix container-top">
+            <div class="col-md-12 column">
+                <img src="{{brandImage}}" alt="company logo" class="pull-right" />
+                <div class="text-right text-large color-normal">
+                    {{title}}
+                </div>
+                <div class="text-right text-normal color-highlight">
+                    {{subTitle}}
+                </div>
+                <div class="text-right text-normal color-normal" ng-class="{hide: hasExtraInfo}">
+                    {{edition}} Edition
+                </div>
+                <div class="text-right text-mid color-normal">
+                    {{extraInfo}}
+                </div>
+                <div class="text-center text-small high-light-info">
+                    {{highlightInfo}}
+                </div>
+                <div class="text-right text-normal color-normal" ng-class="{hide: !hasExtraInfo}">
+                    {{edition}} Edition
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix container-bottom">
+            <div class="col-md-6">
+                <div class="text-left text-mid color-normal container-special-offer">
+                    {{specialOfferInfo}}
+                </div>
+                <div class="text-tiny color-normal text-center container-sub-info">
+                    {{subInfo}}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ol class="list-key-point">
+                    <li ng-repeat="keyPoint in keyPoints" class="text-small color-normal">
+                        {{keyPoint.keyPointInfo}}
+                    </li>
+                </ol>
+                <div class="text-small color-normal text-center container-author">
+                    {{authors}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link href="~/Content/BookCover.css" rel="stylesheet" />
+
+@section scripts {
+    @Scripts.Render("~/Scripts/angular.js")
+    @Scripts.Render("~/Scripts/app/book-controller.js")
+}
